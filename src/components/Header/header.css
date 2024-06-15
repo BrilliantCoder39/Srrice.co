@@ -1,0 +1,14 @@
+.header{
+    background-color: black;
+    display: flex;
+    height: 138px;    
+}
+.logo{
+    margin-left: 3%;
+    margin-top: 20px;
+}
+.menuicon{
+    margin-top: 60px;
+    color: white;
+       
+}
