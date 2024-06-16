@@ -6,8 +6,8 @@ const Brief = () => {
     return (
         <div >
             <div className='z-10 fixed top-0 w-full'><Header /></div>
-            <div className='flex mx-[5%] lg:mx-[5%] xl:mx-[10%] 2xl:mx-[15%] 3xl:mx-[18%] mt-[160px]'>
-                <div>
+            <div className='flex mx-[5%] lg:mx-[5%] xl:mx-[10%] mt-[160px]'>
+                <div className="overflow-hidden w-[100%] ">
                     <div className="absolute top-[140px] opacity-25 text-[200px] text-gray-300 pointer-events-none text-bold ">
                         SRRIC BRIEF
                     </div>
@@ -15,8 +15,8 @@ const Brief = () => {
                         <div className="py-[20px]">Inside SRRIC</div>
                         <div className="text-[48px] font-bold">SRRIC Brief - Coming Soon</div>
                     </div>
-                    <div className="w-[100%] ml-[20%] flex flex-col items-center justify-center">
-                        <CountdownComponent />
+                    <div className=" hidden w-full mx-auto  md:flex flex-col items-center justify-center ">
+                        <CountdownComponent className ="flex"/>
                     </div>
                 </div>
             </div>

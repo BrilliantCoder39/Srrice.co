@@ -7,7 +7,7 @@ import completedIcon from '../../images/Icons/completed.png';
 import scheduledIcon from '../../images/Icons/scheduled.png';
 import { useDispatch } from 'react-redux';
 import { setProjectStyle } from '../../redux/actions/projectStactusAction';
-import projects from '../../helpers/Projects';
+import projects from '../../helpers/Project1';
 
 const containerStyle = {
   width: '100%',
@@ -45,7 +45,7 @@ const Map = () => {
   return (
     <div style={containerStyle}> {/* Parent container */}
       <NavBar projects={projects} onProjectClick={handleProjectClick} /> {/* NavBar */}
-      <LoadScript googleMapsApiKey="">
+      <LoadScript googleMapsApiKey="AIzaSyBuL4FuumNhtCmkLqHMlVlHRSTbKMeTLvU">
         <GoogleMap
           mapContainerStyle={{ flex: 1 }} // GoogleMap takes up remaining space
           center={defaultCenter}
@@ -67,14 +67,33 @@ const Map = () => {
             >
               <div>
                 <div>
-                    <h2>{selected.name}</h2>
+                    <h2>{selected.title}</h2>
                 </div>
-                <YoutubePlayer videoId={selected.link}/>
+                <YoutubePlayer videoId={selected.videoId}/>
               </div>
             </InfoWindow>
           )}
-          <div className='flex absolute w-[100%] bottom-[20px]'>
-                {cardData.map((card, index) => (
+          <div className='flex flex-wrap justify-center items-start absolute bottom-[20px] z-20 w-full'>
+          {cardData.map((card, index) => (
+              <div key={index} className='flex justify-center hidden sm:flex md:w-1/2 lg:w-1/4 p-4'>
+                <div className='relative flex flex-col bg-white h-[140px] p-[10px] rounded-[15px] shadow-sm sm:w-[200px] md:w-[300px]'>
+                  <div className='text-[14px] font-bold text-[#A0A0A0]'>
+                    {card.title}
+                  </div>
+                  <div className='flex items-center'>
+                    <div className='mr-1 font-bold text-[42px] text-[#1f2027]'>{card.number}</div>
+                    <div>{card.description}</div>
+                  </div>
+                  <div className='text-[12px] text-[#E31300] cursor-pointer mt-auto' onClick={()=>handleProjectStatus(card.status)}>{card.bottom}</div>
+                  {card.icon && (
+                    <div className='absolute bottom-0 right-0 mb-[10px] mr-[10px]'>
+                      <img src={card.icon} alt='Icon' className='w-[30px]' />
+                    </div>
+                  )}
+                </div>
+              </div>
+            ))}
+                {/* {cardData.map((card, index) => (
                     <div key={index} className='flex relative justify-between items-center bg-white w-[300px] h-[140px] mx-[5%] p-[10px] rounded-[15px] z-20 shadow-sm'>
                         <div className="flex ml-[3px] flex-col h-[120px] justify-between">
                             <div className='text-[14px] font-bold text-[#A0A0A0]'>
@@ -92,8 +111,8 @@ const Map = () => {
                            {(card.icon)? <div className='w-[50px]'><img src={card.icon} alt='Process Icon' /></div>:''}
                         </div>
                     </div>
-                ))}
-            </div>
+                ))} */}
+          </div>
         </GoogleMap>
       </LoadScript>
     </div>

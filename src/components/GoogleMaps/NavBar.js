@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import completedIcon from '../../images/NavBar/Group-18.png';
 import scheduledIcon from '../../images/NavBar/Group-20.png';
+import ongoingIcon from '../../images/NavBar/1.png';
 import { useSelector } from 'react-redux';
 
 const NavBar = ({ projects, onProjectClick }) => {
@@ -13,7 +14,7 @@ const NavBar = ({ projects, onProjectClick }) => {
     } else if (status === 'scheduled') {
       return scheduledIcon;
     } else {
-      return ''; // Default icon or handle other statuses as needed
+      return ongoingIcon; // Default icon or handle other statuses as needed
     }
   };
 
@@ -38,7 +39,7 @@ const NavBar = ({ projects, onProjectClick }) => {
               className="bg-none border-none cursor-pointer text-blue-500 focus:outline-none truncate flex"
               style={{ maxWidth: isExpanded ? '280px' : '50px' }} >
               <img src={getStatusIcon(project.status)} className='min-w-[50px] h-[40px] flex items-center justify-center' alt={`${project.status} icon`} />
-              <div className='flex flex-col items-center justify-center mt-[5px] ml-[10px]'>{isExpanded ? project.name : ''}</div>
+              <div className='flex flex-col items-center justify-center mt-[5px] ml-[10px]'>{isExpanded ? project.title : ''}</div>
             </button>
           </li>
         ))}

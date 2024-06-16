@@ -6,32 +6,160 @@ const ProcurementActivities = () => {
     //Constant
     const data = [
         {
-            project: "GW-DMW-14-22-23",
-            address: 'Road Rehabilitation Works at Ali Trace, Rich Plain Road, Diego Martin',
-            compony: 'Coosal’s Construction Company Ltd.',
-            date: 'September 19th, 2023',
-            price: '$419,802.08',
+            No:1,
+            ProjectNumber:"GW-DMW-15-22-23",
+            ProjectName: "Julien Park, Diego Martin",
+            Unspc:72141103,
+            des:"Road Rehabilitation and Drainage Upgrade Projects",
+            date:"Sep-23",
+            completion:"Jan-24",
+            procurement_method:"Selective",
+            Standstill:"N/A",
+            Contract:"Fixed Price"
+
         },
         {
-            project: "GW-DMW-14-22-24",
-            address: 'Road Rehabilitation Works at Ali Trace, Diego Martin',
-            compony: 'Coosal’s Construction Company Ltd.',
-            date: 'September 19th, 2024',
-            price: '$342,342.09',
+            No:1,
+            ProjectNumber:"GW-DMW-15-22-23",
+            ProjectName: "Julien Park, Diego Martin",
+            Unspc:72141103,
+            des:"Road Rehabilitation and Drainage Upgrade Projects",
+            date:"Sep-23",
+            completion:"Jan-24",
+            procurement_method:"Selective",
+            Standstill:"N/A",
+            Contract:"Fixed Price"
+
         },
         {
-            project: "GW-DMW-14-22-26",
-            address: 'Road Rehabilitation Works at Ali Trace, Rich Plain Road, Diego Martin',
-            compony: 'Coosal’s Construction Company Ltd.',
-            date: 'September 19th, 2023',
-            price: '$419,802.08',
+            No:1,
+            ProjectNumber:"GW-DMW-15-22-23",
+            ProjectName: "Julien Park, Diego Martin",
+            Unspc:72141103,
+            des:"Road Rehabilitation and Drainage Upgrade Projects",
+            date:"Sep-23",
+            completion:"Jan-24",
+            procurement_method:"Selective",
+            Standstill:"N/A",
+            Contract:"Fixed Price"
+
         },
         {
-            project: "GW-DMW-14-22-23",
-            address: 'Road Rehabilitation Works at Ali Trace, Rich Plain Road, Diego Martin',
-            compony: 'Coosal’s Construction Company Ltd.',
-            date: 'September 19th, 2023',
-            price: '$419,802.08',
+            No:1,
+            ProjectNumber:"GW-DMW-15-22-23",
+            ProjectName: "Julien Park, Diego Martin",
+            Unspc:72141103,
+            des:"Road Rehabilitation and Drainage Upgrade Projects",
+            date:"Sep-23",
+            completion:"Jan-24",
+            procurement_method:"Selective",
+            Standstill:"N/A",
+            Contract:"Fixed Price"
+
+        },
+        {
+            No:1,
+            ProjectNumber:"GW-DMW-15-22-23",
+            ProjectName: "Julien Park, Diego Martin",
+            Unspc:72141103,
+            des:"Road Rehabilitation and Drainage Upgrade Projects",
+            date:"Sep-23",
+            completion:"Jan-24",
+            procurement_method:"Selective",
+            Standstill:"N/A",
+            Contract:"Fixed Price"
+
+        },
+        {
+            No:1,
+            ProjectNumber:"GW-DMW-15-22-23",
+            ProjectName: "Julien Park, Diego Martin",
+            Unspc:72141103,
+            des:"Road Rehabilitation and Drainage Upgrade Projects",
+            date:"Sep-23",
+            completion:"Jan-24",
+            procurement_method:"Selective",
+            Standstill:"N/A",
+            Contract:"Fixed Price"
+
+        },
+        {
+            No:1,
+            ProjectNumber:"GW-DMW-15-22-23",
+            ProjectName: "Julien Park, Diego Martin",
+            Unspc:72141103,
+            des:"Road Rehabilitation and Drainage Upgrade Projects",
+            date:"Sep-23",
+            completion:"Jan-24",
+            procurement_method:"Selective",
+            Standstill:"N/A",
+            Contract:"Fixed Price"
+
+        },
+        {
+            No:1,
+            ProjectNumber:"GW-DMW-15-22-23",
+            ProjectName: "Julien Park, Diego Martin",
+            Unspc:72141103,
+            des:"Road Rehabilitation and Drainage Upgrade Projects",
+            date:"Sep-23",
+            completion:"Jan-24",
+            procurement_method:"Selective",
+            Standstill:"N/A",
+            Contract:"Fixed Price"
+
+        },
+        {
+            No:1,
+            ProjectNumber:"GW-DMW-15-22-23",
+            ProjectName: "Julien Park, Diego Martin",
+            Unspc:72141103,
+            des:"Road Rehabilitation and Drainage Upgrade Projects",
+            date:"Sep-23",
+            completion:"Jan-24",
+            procurement_method:"Selective",
+            Standstill:"N/A",
+            Contract:"Fixed Price"
+
+        },
+        {
+            No:1,
+            ProjectNumber:"GW-DMW-15-22-23",
+            ProjectName: "Julien Park, Diego Martin",
+            Unspc:72141103,
+            des:"Road Rehabilitation and Drainage Upgrade Projects",
+            date:"Sep-23",
+            completion:"Jan-24",
+            procurement_method:"Selective",
+            Standstill:"N/A",
+            Contract:"Fixed Price"
+
+        },
+        {
+            No:1,
+            ProjectNumber:"GW-DMW-15-22-23",
+            ProjectName: "Julien Park, Diego Martin",
+            Unspc:72141103,
+            des:"Road Rehabilitation and Drainage Upgrade Projects",
+            date:"Sep-23",
+            completion:"Jan-24",
+            procurement_method:"Selective",
+            Standstill:"N/A",
+            Contract:"Fixed Price"
+
+        },
+        {
+            No:1,
+            ProjectNumber:"GW-DMW-15-22-23",
+            ProjectName: "Julien Park, Diego Martin",
+            Unspc:72141103,
+            des:"Road Rehabilitation and Drainage Upgrade Projects",
+            date:"Sep-23",
+            completion:"Jan-24",
+            procurement_method:"Selective",
+            Standstill:"N/A",
+            Contract:"Fixed Price"
+
         },
 
     ];
@@ -39,30 +167,56 @@ const ProcurementActivities = () => {
     const columns = useMemo(
         () => [
             {
-                accessorKey: 'project', //access nested data with dot notation
-                header: 'GW-DMW-14-22-23',
+                accessorKey: 'No', //access nested data with dot notation
+                header: 'No',
+                size: 50,
+            },
+            {
+                accessorKey: 'ProjectNumber',
+                header: 'Number',
+                size:50
+            },
+            {
+                accessorKey: 'ProjectName', //normal accessorKey
+                header: 'Project Name',
+                size: 50,
+            },
+            {
+                accessorKey: 'Unspc',
+                header: 'UNSPC',
+                size: 50,
+            },
+            {
+                accessorKey: 'des',
+                header: 'Description',
                 size: 100,
-            },
-            {
-                accessorKey: 'address',
-                header: 'Adress',
-                size: 400,
-            },
-            {
-                accessorKey: 'compony', //normal accessorKey
-                header: 'Coosal’s Construction Company Ltd.',
-                size: 250,
             },
             {
                 accessorKey: 'date',
-                header: 'September 19th, 2023',
+                header: 'Proposed Date for Issuing Bidding Documents',
+                size: 80,
+            },
+            {
+                accessorKey: 'completion',
+                header: ' Estimate Date for Completion',
                 size: 100,
             },
             {
-                accessorKey: 'price',
-                header: '$419,802.08',
+                accessorKey: 'procurement_method',
+                header: 'Method',
                 size: 100,
             },
+            {
+                accessorKey: 'Standstill',
+                header: 'Standstill Period',
+                size: 50,
+            },
+            {
+                accessorKey: 'Contract',
+                header: 'Contract Type',
+                size: 100,
+            },
+           
         ],
         [],
     );

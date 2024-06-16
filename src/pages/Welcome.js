@@ -6,7 +6,7 @@ const Welcome = () => {
     return (
         <div >
             <div className='z-10 fixed top-0 w-full'><Header /></div>
-            <div className='flex mx-[5%] lg:mx-[5%] xl:mx-[10%] 2xl:mx-[15%] 3xl:mx-[18%] mt-[160px]'>
+            <div className='flex mx-[5%] lg:mx-[5%] xl:mx-[10%] mt-[160px]'>
                 <div>
                     <div className="absolute top-[140px] opacity-25 text-[200px] text-gray-300 pointer-events-none text-bold ">
                         WELCOME
@@ -29,17 +29,17 @@ const Welcome = () => {
                         </div>
                     </div>
 
-                    <div className="flex mb-[100px]">
-                        <div className="ml-4 pr-[20px]">
-                            <div className="text-[36px] font-bold">Our Mandate</div>
+                    <div className="md:flex mb-[100px]">
+                        <div className="ml-4 md:pr-[20px]">
+                            <div className="text-[36px] font-bold">Our Mission</div>
                             <div className="py-[20px]">
-                                The mandate of SRRIC is to develop the existing infrastructure of secondary roads by focusing on road repair, rehabilitation, and upgrade works throughout Trinidad to enhance road capacity, improve existing road infrastructure, and ensure consistent road accessibility and connectivity throughout the country.
+                                Our mission is “to identify and deliver sustainable secondary roads to stakeholders by utilizing modern technology, engineering, and project management techniques to provide a quality product.”
                             </div>
                         </div>
-                        <div className="ml-4 pl-[40px]">
-                            <div className="text-[36px] font-bold">Our Mandate</div>
+                        <div className="ml-4 md:pl-[40px]">
+                            <div className="text-[36px] font-bold">Our Vision</div>
                             <div className="py-[20px]">
-                                The mandate of SRRIC is to develop the existing infrastructure of secondary roads by focusing on road repair, rehabilitation, and upgrade works throughout Trinidad to enhance road capacity, improve existing road infrastructure, and ensure consistent road accessibility and connectivity throughout the country.
+                                Our Vision “we aim to be leaders in delivering  sustainable secondary roads, demonstrating project management excellence, enhancing road networks, and infrastructure.”
                             </div>
                         </div>
                     </div>

@@ -24,28 +24,33 @@ function Footer() {
 
     return (
         <div className=' bg-[#171717] text-[#54595f]'>
-            <div className='md:flex py-[100px] px-[2%] lg:px-[4%] xl:mx-[10%]'>
-                <div className=' w-[30%]'>
-                    <div> <img src={logoImage} alt="Company Logo" className="h-[60px] sm:h-[60px] md:h-[70px]  lg:h-[98px] xl:h-[120px] mb-[50px]" /> </div>
-                    <div className='flex'>
-                        <div className='rounded-[50%] xl:h-[40px] xl:w-[40px] bg-[#22282c] flex items-center justify-center mr-[10px] hover:bg-[#057bd5] transition duration-300 hover:cursor-pointer'>
-                            <a href='https://www.facebook.com/srricltd?mibextid=ZbWKwL'>
-                                <img src={facebookIcon} alt=" Company Logo" className=" h-[20px] sm:h-[60px] md:h-[70px] lg:h-[98px] xl:h-[20px]" />
-                            </a>
-                        </div>
-                        <div className='rounded-[50%] xl:h-[40px] xl:w-[40px] bg-[#22282c] flex items-center justify-center mr-[10px] hover:bg-[#057bd5] transition duration-300 hover:cursor-pointer'>
-                            <a href='https://www.instagram.com/srric.co?igsh=MWtpdDR4ZnBwcXRqbg=='>
-                                <img src={instagramIcon} alt="Company Logo" className="h-[20px] sm:h-[60px] md:h-[70px] lg:h-[98px] xl:h-[20px]" />
-                            </a>
-                        </div>
-                        <div className='rounded-[50%] xl:h-[40px] xl:w-[40px] bg-[#22282c] flex items-center justify-center mr-[10px] hover:bg-[#057bd5] transition duration-300 hover:cursor-pointer'>
-                            <a href='https://www.tiktok.com/@srric.co?lang=en'>
-                                <img src={wifiIcon} alt="Company Logo" className="h-[20px] sm:h-[60px] md:h-[70px] lg:h-[98px] xl:h-[20px]" />
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div className='w-[20%] ml-[20px] lg:ml-[70px] xl:ml-[100px]'>
+            <div className='sm:flex py-[100px] px-[2%] lg:px-[4%] xl:mx-[10%] jsutify-center'>
+            <div className='flex-col justify-center items-center sm:w-[30%]'>
+
+    <div className='flex justify-center'>
+        <img src={logoImage} alt="Company Logo" className="h-[80px] sm:h-[100%] mb-[50px]" />
+    </div>
+    <div className='flex justify-center sm:justify-start'>
+        <div className='rounded-[50%] h-[40px] w-[40px] bg-[#22282c] flex items-center justify-center mr-[10px] hover:bg-[#057bd5] transition duration-300 hover:cursor-pointer'>
+            <a href='https://www.facebook.com/srricltd?mibextid=ZbWKwL' aria-label="Facebook">
+                <img src={facebookIcon} alt="Facebook Icon" className="h-[20px]" />
+            </a>
+        </div>
+        <div className='rounded-[50%] h-[40px] w-[40px] bg-[#22282c] flex items-center justify-center mr-[10px] hover:bg-[#057bd5] transition duration-300 hover:cursor-pointer'>
+            <a href='https://www.instagram.com/srric.co?igsh=MWtpdDR4ZnBwcXRqbg==' aria-label="Instagram">
+                <img src={instagramIcon} alt="Instagram Icon" className="h-[30px]" />
+            </a>
+        </div>
+        <div className='rounded-[50%] h-[40px] w-[40px] bg-[#22282c] flex items-center justify-center mr-[10px] hover:bg-[#057bd5] transition duration-300 hover:cursor-pointer'>
+            <a href='https://www.tiktok.com/@srric.co?lang=en' aria-label="TikTok">
+                <img src={wifiIcon} alt="TikTok Icon" className="h-[20px]" />
+            </a>
+        </div>
+    </div>
+</div>
+
+            
+                <div className='sm:w-[20%]  ml-[20px] lg:ml-[70px] xl:ml-[100px]'>
                     <div className='pb-[20px] text-[#ffffff] text-[20px]'>USEFUL LINKS</div>
                     <div className='pb-[20px]'><a href=''> ABOUT US </a> </div>
                     <div className='pb-[20px]'> <a href=''> OTHER SERVICES</a></div>
@@ -83,7 +88,7 @@ function Footer() {
                         </div>
                     </div>
                 </div>
-                <div className='w-[25%]'>
+                <div className='sm:w-[25%]'>
                     <div className='text-[#ffffff]'>NEWSLETTER</div>
                     <form onSubmit={handleSubmit} className="items-center justify-center mt-[30px]">
                         <input
