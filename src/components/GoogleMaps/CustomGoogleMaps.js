@@ -46,7 +46,7 @@ const Map = () => {
   return (
     <div style={containerStyle}> {/* Parent container */}
       <NavBar projects={projects} onProjectClick={handleProjectClick} /> {/* NavBar */}
-      <LoadScript googleMapsApiKey="AIzaSyBuL4FuumNhtCmkLqHMlVlHRSTbKMeTLvU">
+      <LoadScript googleMapsApiKey="AIzaSyCSBAB1S5My3mka9nbi1DgAvK6TaeV1bAc">
         <GoogleMap
           mapContainerStyle={{ flex: 1 }} // GoogleMap takes up remaining space
           center={defaultCenter}
